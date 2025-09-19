@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Convite Especial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a;
+        }
+        /* Estilos para animação de scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Animação de fade-in para o modal */
+        .modal-hidden {
+            display: none;
+            opacity: 0;
+        }
+        .modal-visible {
+            display: flex;
+            opacity: 1;
+        }
+        .modal-content {
+            transform: scale(0.9);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+        }
+        .modal-visible .modal-content {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="text-white">
+
+    <div class="max-w-md mx-auto min-h-screen bg-black shadow-lg shadow-yellow-500/10">
+
+        <!-- Capa de Filme -->
+        <div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('https://i.postimg.cc/2j0pwMMR/image.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center p-4">
+                <h1 class="text-5xl md:text-6xl font-black text-white uppercase tracking-widest" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+                    Tenho uma proposta
+                </h1>
+                <p class="text-lg md:text-xl text-white mt-4" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">
+                    Te fiz um convite, espero que goste
+                </p>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-8 space-y-8 pb-24">
+            
+            <!-- Storybook Section -->
+            <main class="space-y-10">
+                
+                <!-- Cena 1 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/QC2JmXrJ/image.png" alt="Imagem da primeira cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Em um reino não tão distante, vivia um nobre rapaz conhecido como Lobinho. Ele amava sua rainha, Gleyse, mais do que piadas de tiozão em um churrasco de domingo. Certo dia, ele teve uma ideia brilhante: "E se eu levasse meu Amor para ver um castelo que se move? Seria um programa... animado!"</p>
+                </div>
+
+                <!-- Cena 2 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/pT4nKqDw/image.png" alt="Imagem da segunda cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Mas havia um obstáculo em seu caminho: a um pouco maluca melhor amiga de Gleyse. Ana tinha outros planos para a noite, planos que envolviam pães, carnes e queijos. "GLEYSE, VAMOS COMER UM HAMBÚRGUER TÃO GRANDE QUE VAI PRECISAR DE UM CEP PRÓPRIO!", gritou ela ao telefone. Gleyse sorriu, encantada com a ideia. "Studio Ghibli no cinema? Parece mágico! Mas... e a Ana? A gente tinha combinado de fazer alguma coisa hoje."</p>
+                </div>
+
+                <!-- Cena 3 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/D0kcdvhd/image.png" alt="Imagem da terceira cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Lobinho, ouvindo a conversa, decidiu que era hora de agir. Ele se aproximou de Gleyse com a suavidade de um elefante em uma loja de cristais e disse: "Amor, sei que um hambúrguer parece bom, mas... e se a gente convidar ela e fossemos ver o filme e depois irmos na Hamburgueria?"</p>
+                </div>
+                
+                <!-- Cena 4 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/g0xyCXkH/image.png" alt="Imagem da quarta cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Gleyse pegou o telefone. "Deixa que eu falo com a fera," brincou ela, discando o número. "Oi, amiga! A gente tava pensando em ir ao cinema hoje, ver um filme super legal. Quer vir com a gente?"</p>
+                </div>
+
+                <!-- Cena 5 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/d3NVc10G/image.png" alt="Imagem da quinta cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Do outro lado da linha, a voz de Gleyse surgiu com uma energia leve, quase vibrante. "Castelo Animado? Claro que sim! Nossa, eu queria muito ver esse filme.. Já fiquei animada só de imaginar. Quero ir, quero muito!"</p>
+                </div>
+
+                <!-- Cena 6 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/1tc82s6K/image.png" alt="Imagem da sexta cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Gleyse desligou o telefone e olhou para Lobinho. "Ela disse que vai sim." Lobinho deu de ombros com um sorriso. "Bom, independente dela Amor, você estando lá. Então, nosso encontro está de pé?"</p>
+                </div>
+
+                <!-- Cena 7 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/QxVMkp6m/image.png" alt="Imagem da sétima cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Gleyse riu. "Está de pé, meu cavaleiro das piadas ruins. Você sempre sabe o que dizer." Ela se levantou, pegando a mão dele. "Vamos, antes que o castelo se mova para outra cidade."</p>
+                </div>
+                
+                <!-- Cena 8 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/qBFrrWLc/image.png" alt="Imagem da oitava cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">E assim, o casal partiu para o cinema. A noite estava estrelada, e a promessa de uma aventura mágica enchia o ar de empolgação, mesmo sem saber se teriam companhia extra.</p>
+                </div>
+                
+                <!-- Cena 9 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/2j0pwMMR/image.png" alt="Imagem da nona cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">Sentados na sala escura, com um balde de pipoca para dividir, eles assistiram ao castelo mágico voar pela tela. Era uma noite perfeita, cheia de encanto e cumplicidade.</p>
+                </div>
+                
+                <!-- Cena 10 -->
+                <div class="space-y-3 reveal">
+                    <img src="https://i.postimg.cc/FKPrLzj8/image.png" alt="Imagem da décima cena" class="w-full h-auto object-cover rounded-lg shadow-md shadow-yellow-500/20 border-2 border-gray-700">
+                    <p class="text-center text-gray-300 text-lg italic px-4">No final, o que importava era aquele momento, só deles. Afinal, o amor é o maior espetáculo, e para esse, eles sempre teriam os melhores lugares.</p>
+                </div>
+
+            </main>
+
+            <!-- Seção de Decisão -->
+            <footer class="text-center pt-8 border-t-2 border-yellow-500/50 reveal">
+                <h2 class="text-2xl text-yellow-400 mb-6 font-bold">Vem comigo?</h2>
+                <div class="flex justify-center gap-4">
+                    <button id="yesBtn" class="bg-yellow-500 text-black font-bold py-3 px-10 rounded-full shadow-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                        Sim
+                    </button>
+                    <button id="noBtn" class="bg-gray-800 text-gray-300 font-bold py-3 px-10 rounded-full shadow-lg hover:bg-gray-700 hover:text-white transition-all duration-300 transform hover:scale-105 border-2 border-gray-600 hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        Não
+                    </button>
+                </div>
+                <div class="mt-8 text-white text-sm italic">
+                    <p>Desculpa a demora kkkkk, garrei um pouco pra fazer, não precisa dizer 'Sim' amor</p>
+                    <p class="mt-4">A Ana concordou viu kkkk</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal para o botão "Não" -->
+    <div id="noModal" class="modal-hidden fixed inset-0 bg-black bg-opacity-80 items-center justify-center p-4 z-50 transition-opacity duration-300">
+        <div class="modal-content bg-gray-900 rounded-lg shadow-2xl shadow-yellow-500/30 w-full max-w-sm border-2 border-yellow-500/50 p-4 relative">
+            <button id="closeModalBtn" class="absolute -top-4 -right-4 bg-white text-black rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg">&times;</button>
+            <img src="https://i.postimg.cc/FFY6mz1z/image.png" alt="Imagem surpresa do modal" class="w-full h-auto object-cover rounded-md">
+            <p class="text-center text-lg mt-4 text-yellow-400 font-bold">Tem certeza?</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lógica para animação de scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 }); // Anima quando 10% do elemento está visível
+
+            const elementsToReveal = document.querySelectorAll('.reveal');
+            elementsToReveal.forEach(el => {
+                observer.observe(el);
+            });
+
+            // Lógica para o Modal
+            const noBtn = document.getElementById('noBtn');
+            const yesBtn = document.getElementById('yesBtn');
+            const noModal = document.getElementById('noModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+
+            noBtn.addEventListener('click', () => {
+                noModal.classList.remove('modal-hidden');
+                noModal.classList.add('modal-visible');
+            });
+
+            closeModalBtn.addEventListener('click', () => {
+                noModal.classList.add('hidden');
+                noModal.classList.remove('flex');
+            });
+            
+            // Clicar fora do modal também fecha
+            noModal.addEventListener('click', (event) => {
+                if (event.target === noModal) {
+                    noModal.classList.add('modal-hidden');
+                    noModal.classList.remove('modal-visible');
+                }
+            });
+            
+            // Ação do botão Sim
+            yesBtn.addEventListener('click', () => {
+                const phoneNumber = '5537999745723';
+                const message = encodeURIComponent('Aceito amor');
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+
